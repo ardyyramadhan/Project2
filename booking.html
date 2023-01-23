@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Ruangan</title>
+
+    <link rel="stylesheet" href="css/css1.css">
+    <link href="img/hm.jpg" rel="icon">
+    
+</head>
+<body>
+
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <div id="logo">
+            <h1><a href="index.html"><span>Я</span>Room</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+          </div>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about-us">About</a></li>
+              <li><a class="nav-link scrollto" href="#features">Features</a></li>
+              <li><a class="nav-link scrollto" href="#team">Team</a></li>
+              <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+              <li class="dropdown"><a href="#"><span>For More</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="Fasilitas.html">Fasilitas</a></li>
+                    <li><a href="booking.html">Booking Ruangan</a></li>
+                    <li><a href="daftar.html">Daftar Ruangan</a></li>
+                    <li><a href="tambah-ruangan.html">Tambah Ruangan</a></li>
+                    <li><a href="daftar-peminjaman.html">Daftar Peminjaman</a></li>
+                  </ul>
+                </li>
+                <li><a class="nav-link scrollto" href="login.html">Login or Regist</a></li>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header>
+
+    <fieldset>
+        
+        <div class="row">
+            <div class="col-md-9">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#"> Booking Ruangan</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Home > </a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        
+        <fieldset>
+            <legend>Booking Ruangan</legend>
+
+            <form>
+            <label for="np">Nama Peminjam: </label>
+            <input type="text" id="np" name="np"><br>
+
+            <p>Nama Ruangan:
+                <select name="room">
+                    <option>Gedung</option>
+                    <option>Aula</option>
+                    <option>Ruang Rapat</option>
+                    <option>Ruang Kelas</option>
+                </select>
+            </p><br>
+            
+            Deskripsi Kegiatan: <textarea name="deskegiatan" id="dkegiatan" cols="30" rows="5"></textarea>
+            
+            <p>Fasilitas Tambahan: 
+                <form>
+                    <input type="checkbox" id="pil1" name="proyector" value="layar">
+                    <label for="pil11"> Proyector</label>
+                    <input type="checkbox" id="pil2" name="wifi" value="wifi">
+                    <label for="pil2"> WiFi</label>
+                    <input type="checkbox" id="pil3" name="sound" value="speaker">
+                    <label for="pil3"> Sound System</label>
+                    <input type="checkbox" id="pil4" name="catering" value="makan">
+                    <label for="pil4"> Catering</label>
+                  </form> 
+                </p>
+
+                <form>
+                    <label for="tpinjam">Tanggal Pinjam:</label>
+                <input type="date" id="tpinjam" name="tpinjam">
+              </form><br>
+        
+            <label for="cp">Contact Person: </label>
+            <input type="text" id="cp" name="cp"><br><br>
+
+            <label for="tlf">Telfon/HP: </label>
+            <input type="text" id="tlf" name="tlf">
+            <br><br>
+            
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email">
+            <br><br>
+
+            <form action="action.php">
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </form>
+
+          </form>
+        </fieldset>
+    </fieldset><br><br>
+
+    <footer>
+        Develop by Kelompok 4 STT-NF ©2023 
+    </footer>
+</body>
+</html>
